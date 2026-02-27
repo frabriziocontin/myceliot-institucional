@@ -23,9 +23,9 @@ export default function Header() {
                     </nav>
 
                     <div className="hidden md:flex items-center">
-                        <button className="px-6 py-2 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm tracking-wide">
+                        <a href="https://brave-cliff-0ff7de60f.2.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm tracking-wide">
                             Acceso a Plataforma
-                        </button>
+                        </a>
                     </div>
 
                     <div className="md:hidden flex items-center">
@@ -44,9 +44,9 @@ export default function Header() {
                         <a href="#tecnologia" className="block text-base font-medium hover:text-primary">Tecnología</a>
                         <a href="#nosotros" className="block text-base font-medium hover:text-primary">Nosotros</a>
                         <a href="#contacto" className="block text-base font-medium hover:text-primary">Contacto</a>
-                        <button className="w-full mt-4 px-6 py-3 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm">
+                        <a href="https://brave-cliff-0ff7de60f.2.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" className="block text-center w-full mt-4 px-6 py-3 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm">
                             Acceso a Plataforma
-                        </button>
+                        </a>
                     </div>
                 </div>
             )}
