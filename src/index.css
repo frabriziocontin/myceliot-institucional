@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-textMuted antialiased selection:bg-primary/30 selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-textMain font-bold tracking-tight;
+  }
+}
