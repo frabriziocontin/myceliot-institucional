@@ -1,0 +1,62 @@
+{
+    "header": {
+        "solutions": "Soluciones",
+        "technology": "Tecnología",
+        "about": "Nosotros",
+        "contact": "Contacto",
+        "platformAccess": "Acceso a Plataforma"
+    },
+    "hero": {
+        "titlePrefix": "El sistema nervioso de su ",
+        "titleHighlight": "producción.",
+        "subtitle": "Desplegamos redes IoT descentralizadas de largo alcance. Monitoreo en tiempo real para el agro y la industria, sin depender de redes celulares.",
+        "exploreSolutions": "Explorar Soluciones",
+        "viewTechnology": "Ver Tecnología"
+    },
+    "vision": {
+        "badge": "Visión Micelio",
+        "title1": "Inspirados en la naturaleza.",
+        "title2": "Diseñados para la industria.",
+        "p1": "Al igual que los hongos conectan el bosque mediante una extensa e invisible red subterránea —el micelio—, nuestros gateways LoRaWAN conectan cada activo físico de su empresa en una única plataforma de datos.",
+        "p2Start": "Desde boyeros eléctricos y tanques australianos hasta silos y maquinaria pesada, creamos",
+        "p2Bold": " redes descentralizadas y resilientes ",
+        "p2End": "que le dan un verdadero sistema nervioso a su operación física."
+    },
+    "solutions": {
+        "title": "Soluciones B2B",
+        "subtitle": "Despliegue rápido, autonomía energética y alcance kilométrico. Monitoree variables críticas sin depender de cobertura celular.",
+        "smartAgro": {
+            "title": "Smart Agro",
+            "desc": "Monitoreo de boyeros eléctricos de 9000V, medición de niveles en tanques australianos y GPS tracking de ganado en tiempo real.",
+            "tag1": "9000V",
+            "tag2": "GPS Tracking",
+            "tag3": "Telemetría"
+        },
+        "industry": {
+            "title": "Industria 4.0",
+            "desc": "Mantenimiento predictivo de maquinaria pesada y control de variables físicas (temperatura, vibración, humedad) en plantas industriales."
+        },
+        "infra": {
+            "title": "Infraestructura Autónoma",
+            "desc": "Nodos solares y baterías de ultra-larga duración (hasta 10 años). Nuestra conectividad LoRaWAN privada le garantiza soberanía sobre sus datos, operando donde el 4G/5G no llega.",
+            "stat1": "15km+",
+            "stat1Label": "Alcance LoRa",
+            "stat2": "10 Años",
+            "stat2Label": "Batería"
+        }
+    },
+    "footer": {
+        "ctaTitle": "Elimine los puntos ciegos de su negocio hoy.",
+        "ctaButton": "Contactar a Ventas",
+        "description": "El micelio de la tecnología. Redes LoRaWAN descentralizadas para el agro y la industria pesada.",
+        "company": "Empresa",
+        "about": "Nosotros",
+        "technology": "Tecnología",
+        "successCases": "Casos de Éxito",
+        "contact": "Contacto",
+        "legal": "Legal & Redes",
+        "terms": "Términos y Condiciones",
+        "privacy": "Privacidad de Datos",
+        "rights": "Todos los derechos reservados."
+    }
+}

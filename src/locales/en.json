@@ -1,0 +1,62 @@
+{
+    "header": {
+        "solutions": "Solutions",
+        "technology": "Technology",
+        "about": "About Us",
+        "contact": "Contact",
+        "platformAccess": "Platform Access"
+    },
+    "hero": {
+        "titlePrefix": "The nervous system of your ",
+        "titleHighlight": "production.",
+        "subtitle": "We deploy long-range decentralized IoT networks. Real-time monitoring for agriculture and industry, without depending on cellular networks.",
+        "exploreSolutions": "Explore Solutions",
+        "viewTechnology": "View Technology"
+    },
+    "vision": {
+        "badge": "Mycelium Vision",
+        "title1": "Inspired by nature.",
+        "title2": "Designed for industry.",
+        "p1": "Just as fungi connect the forest through an extensive and invisible underground network —the mycelium—, our LoRaWAN gateways connect every physical asset of your company into a single data platform.",
+        "p2Start": "From electric fencers and water tanks to silos and heavy machinery, we create",
+        "p2Bold": " decentralized and resilient networks ",
+        "p2End": "that give a true nervous system to your physical operation."
+    },
+    "solutions": {
+        "title": "B2B Solutions",
+        "subtitle": "Fast deployment, energy autonomy and kilometric range. Monitor critical variables without relying on cellular coverage.",
+        "smartAgro": {
+            "title": "Smart Agro",
+            "desc": "Monitoring of 9000V electric fencers, water level measurement in tanks, and real-time GPS cattle tracking.",
+            "tag1": "9000V",
+            "tag2": "GPS Tracking",
+            "tag3": "Telemetry"
+        },
+        "industry": {
+            "title": "Industry 4.0",
+            "desc": "Predictive maintenance for heavy machinery and control of physical variables (temperature, vibration, humidity) in industrial plants."
+        },
+        "infra": {
+            "title": "Autonomous Infrastructure",
+            "desc": "Solar nodes and ultra-long lasting batteries (up to 10 years). Our private LoRaWAN connectivity guarantees sovereignty over your data, operating where 4G/5G doesn't reach.",
+            "stat1": "15km+",
+            "stat1Label": "LoRa Range",
+            "stat2": "10 Years",
+            "stat2Label": "Battery"
+        }
+    },
+    "footer": {
+        "ctaTitle": "Eliminate blind spots in your business today.",
+        "ctaButton": "Contact Sales",
+        "description": "The mycelium of technology. Decentralized LoRaWAN networks for agriculture and heavy industry.",
+        "company": "Company",
+        "about": "About Us",
+        "technology": "Technology",
+        "successCases": "Success Cases",
+        "contact": "Contact",
+        "legal": "Legal & Social",
+        "terms": "Terms and Conditions",
+        "privacy": "Data Privacy",
+        "rights": "All rights reserved."
+    }
+}

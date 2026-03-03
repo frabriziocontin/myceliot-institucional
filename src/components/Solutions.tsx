@@ -1,8 +1,10 @@
 import { LocateFixed, Factory, MapPin, Zap, ActivitySquare, Sun } from 'lucide-react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function Solutions() {
+    const { t } = useTranslation();
     const container = {
         hidden: { opacity: 0 },
         show: {
@@ -21,11 +23,10 @@ export default function Solutions() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold font-sans text-textMain mb-4">
-                        Soluciones B2B
+                        {t('solutions.title')}
                     </h2>
                     <p className="text-lg text-textMuted">
-                        Despliegue rápido, autonomía energética y alcance kilométrico.
-                        Monitoree variables críticas sin depender de cobertura celular.
+                        {t('solutions.subtitle')}
                     </p>
                 </div>
 
@@ -46,20 +47,20 @@ export default function Solutions() {
                             <div className="h-12 w-12 rounded-sm bg-primary/10 flex items-center justify-center mb-6">
                                 <LocateFixed className="h-6 w-6 text-primary" />
                             </div>
-                            <h3 className="text-2xl font-bold text-textMain mb-2">Smart Agro</h3>
+                            <h3 className="text-2xl font-bold text-textMain mb-2">{t('solutions.smartAgro.title')}</h3>
                             <p className="text-textMuted max-w-md">
-                                Monitoreo de boyeros eléctricos de 9000V, medición de niveles en tanques australianos y GPS tracking de ganado en tiempo real.
+                                {t('solutions.smartAgro.desc')}
                             </p>
 
                             <div className="mt-6 flex flex-wrap gap-2">
                                 <span className="text-xs font-semibold px-2 py-1 bg-white/5 text-textMuted rounded-sm flex items-center gap-1">
-                                    <Zap className="w-3 h-3" /> 9000V
+                                    <Zap className="w-3 h-3" /> {t('solutions.smartAgro.tag1')}
                                 </span>
                                 <span className="text-xs font-semibold px-2 py-1 bg-white/5 text-textMuted rounded-sm flex items-center gap-1">
-                                    <MapPin className="w-3 h-3" /> GPS Tracking
+                                    <MapPin className="w-3 h-3" /> {t('solutions.smartAgro.tag2')}
                                 </span>
                                 <span className="text-xs font-semibold px-2 py-1 bg-white/5 text-textMuted rounded-sm flex items-center gap-1">
-                                    <ActivitySquare className="w-3 h-3" /> Telemetría
+                                    <ActivitySquare className="w-3 h-3" /> {t('solutions.smartAgro.tag3')}
                                 </span>
                             </div>
                         </div>
@@ -74,9 +75,9 @@ export default function Solutions() {
                                 <Factory className="h-6 w-6 text-primary" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-textMain mb-2">Industria 4.0</h3>
+                                <h3 className="text-xl font-bold text-textMain mb-2">{t('solutions.industry.title')}</h3>
                                 <p className="text-sm text-textMuted">
-                                    Mantenimiento predictivo de maquinaria pesada y control de variables físicas (temperatura, vibración, humedad) en plantas industriales.
+                                    {t('solutions.industry.desc')}
                                 </p>
                             </div>
                         </div>
@@ -97,20 +98,20 @@ export default function Solutions() {
                             <div className="h-12 w-12 rounded-sm bg-primary/10 flex items-center justify-center mb-6">
                                 <Sun className="h-6 w-6 text-primary" />
                             </div>
-                            <h3 className="text-2xl font-bold text-textMain mb-2">Infraestructura Autónoma</h3>
+                            <h3 className="text-2xl font-bold text-textMain mb-2">{t('solutions.infra.title')}</h3>
                             <p className="text-textMuted">
-                                Nodos solares y baterías de ultra-larga duración (hasta 10 años). Nuestra conectividad LoRaWAN privada le garantiza soberanía sobre sus datos, operando donde el 4G/5G no llega.
+                                {t('solutions.infra.desc')}
                             </p>
                         </div>
 
                         <div className="relative z-10 mt-6 md:mt-0 flex gap-4">
                             <div className="text-center p-4 bg-surface rounded-sm border border-white/5">
-                                <span className="block text-xl font-bold text-textMain">15km+</span>
-                                <span className="text-xs text-textMuted uppercase tracking-wider block mt-1">Alcance LoRa</span>
+                                <span className="block text-xl font-bold text-textMain">{t('solutions.infra.stat1')}</span>
+                                <span className="text-xs text-textMuted uppercase tracking-wider block mt-1">{t('solutions.infra.stat1Label')}</span>
                             </div>
                             <div className="text-center p-4 bg-surface rounded-sm border border-white/5">
-                                <span className="block text-xl font-bold text-textMain">10 Años</span>
-                                <span className="text-xs text-textMuted uppercase tracking-wider block mt-1">Batería</span>
+                                <span className="block text-xl font-bold text-textMain">{t('solutions.infra.stat2')}</span>
+                                <span className="text-xs text-textMuted uppercase tracking-wider block mt-1">{t('solutions.infra.stat2Label')}</span>
                             </div>
                         </div>
                     </motion.div>

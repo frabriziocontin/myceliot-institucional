@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
+    const { t } = useTranslation();
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-transparent">
             {/* Removed local MyceliumNetwork, now using global background */}
@@ -14,11 +16,11 @@ export default function Hero() {
                     className="max-w-4xl"
                 >
                     <h1 className="text-5xl md:text-7xl font-sans font-bold text-textMain leading-tight tracking-tight mb-8">
-                        El sistema nervioso de su <span className="text-primary">producción.</span>
+                        {t('hero.titlePrefix')}<span className="text-primary">{t('hero.titleHighlight')}</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-textMuted mb-12 max-w-3xl mx-auto leading-relaxed">
-                        Desplegamos redes IoT descentralizadas de largo alcance. Monitoreo en tiempo real para el agro y la industria, sin depender de redes celulares.
+                        {t('hero.subtitle')}
                     </p>
 
                     <motion.div
@@ -28,11 +30,11 @@ export default function Hero() {
                         className="flex flex-col sm:flex-row gap-4 justify-center"
                     >
                         <button className="px-8 py-4 bg-primary text-background font-bold rounded-sm hover:bg-primary/90 transition-all flex items-center justify-center gap-2 group">
-                            Explorar Soluciones
+                            {t('hero.exploreSolutions')}
                             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </button>
                         <button className="px-8 py-4 bg-surface border border-white/10 text-textMain font-bold rounded-sm hover:bg-white/5 transition-all flex items-center justify-center">
-                            Ver Tecnología
+                            {t('hero.viewTechnology')}
                         </button>
                     </motion.div>
                 </motion.div>
