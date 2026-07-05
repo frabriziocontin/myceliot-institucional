@@ -49,7 +49,7 @@ export default function Header() {
                                 </div>
                             )}
                         </div>
-                        <a href="https://brave-cliff-0ff7de60f.2.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm tracking-wide">
+                        <a href="https://blue-sea-003464e0f.7.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm tracking-wide">
                             {t('header.platformAccess')}
                         </a>
                     </div>
@@ -77,7 +77,7 @@ export default function Header() {
                             <button onClick={() => changeLanguage('pt')} className={`text-sm ${i18n.resolvedLanguage === 'pt' ? 'text-primary' : 'text-textMuted'}`}>PT</button>
                         </div>
 
-                        <a href="https://brave-cliff-0ff7de60f.2.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" className="block text-center w-full mt-4 px-6 py-3 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm">
+                        <a href="https://blue-sea-003464e0f.7.azurestaticapps.net/" target="_blank" rel="noopener noreferrer" className="block text-center w-full mt-4 px-6 py-3 rounded-sm border border-primary text-primary hover:bg-primary/10 transition-colors font-medium text-sm">
                             {t('header.platformAccess')}
                         </a>
                     </div>
