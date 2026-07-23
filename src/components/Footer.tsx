@@ -13,7 +13,10 @@ export default function Footer() {
                     <h2 className="text-3xl md:text-5xl font-bold font-sans text-textMain mb-6">
                         {t('footer.ctaTitle')}
                     </h2>
-                    <button className="px-8 py-4 bg-primary text-background font-bold rounded-sm hover:bg-primary/90 transition-all inline-flex items-center gap-2">
+                    <button 
+                        onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+                        className="px-8 py-4 bg-primary text-background font-bold rounded-sm hover:bg-primary/90 transition-all inline-flex items-center gap-2"
+                    >
                         <Mail className="h-5 w-5" />
                         {t('footer.ctaButton')}
                     </button>

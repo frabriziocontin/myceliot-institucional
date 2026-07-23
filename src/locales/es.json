@@ -58,5 +58,24 @@
         "terms": "Términos y Condiciones",
         "privacy": "Privacidad de Datos",
         "rights": "Todos los derechos reservados."
+    },
+    "contact": {
+        "title": "Contacto de Ventas",
+        "subtitle": "Hable con un especialista en IoT y comience a optimizar sus operaciones físicas.",
+        "name": "Nombre completo",
+        "namePlaceholder": "Ej. Juan Pérez",
+        "email": "Correo electrónico corporativo",
+        "emailPlaceholder": "Ej. juan@empresa.com",
+        "company": "Empresa / Organización",
+        "companyPlaceholder": "Ej. Agro Industrial S.A.",
+        "message": "Mensaje",
+        "messagePlaceholder": "Detalle sus necesidades de conectividad o monitoreo...",
+        "submit": "Enviar Mensaje",
+        "sending": "Enviando...",
+        "successTitle": "¡Mensaje Enviado!",
+        "successDesc": "Gracias por escribirnos. Un especialista de ventas se pondrá en contacto a la brevedad.",
+        "errorTitle": "Error al enviar",
+        "errorDesc": "Ocurrió un error al enviar el mensaje. Por favor, intente nuevamente o escríbanos a ventas@myceliot.com.",
+        "required": "Este campo es requerido"
     }
 }

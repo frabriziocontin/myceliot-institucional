@@ -58,5 +58,24 @@
         "terms": "Terms and Conditions",
         "privacy": "Data Privacy",
         "rights": "All rights reserved."
+    },
+    "contact": {
+        "title": "Contact Sales",
+        "subtitle": "Speak with an IoT specialist and start optimizing your physical operations.",
+        "name": "Full name",
+        "namePlaceholder": "e.g. John Doe",
+        "email": "Corporate email",
+        "emailPlaceholder": "e.g. john@company.com",
+        "company": "Company / Organization",
+        "companyPlaceholder": "e.g. Agro Industrial Ltd.",
+        "message": "Message",
+        "messagePlaceholder": "Describe your connectivity or monitoring needs...",
+        "submit": "Send Message",
+        "sending": "Sending...",
+        "successTitle": "Message Sent!",
+        "successDesc": "Thank you for contacting us. A sales specialist will get back to you shortly.",
+        "errorTitle": "Failed to send",
+        "errorDesc": "An error occurred while sending your message. Please try again or write to us at sales@myceliot.com.",
+        "required": "This field is required"
     }
 }

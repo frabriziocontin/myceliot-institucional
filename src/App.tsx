@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Vision from './components/Vision';
 import Solutions from './components/Solutions';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import GlobalMyceliumBackground from './components/GlobalMyceliumBackground';
 
@@ -15,6 +16,7 @@ function App() {
           <Hero />
           <Vision />
           <Solutions />
+          <ContactForm />
         </main>
         <Footer />
       </div>

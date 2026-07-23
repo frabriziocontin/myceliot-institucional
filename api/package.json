@@ -1,0 +1,14 @@
+{
+  "name": "myceliot-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for MycelIoT Institutional Site",
+  "main": "src/functions/*.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests written\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "resend": "^3.2.0"
+  }
+}
