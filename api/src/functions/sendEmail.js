@@ -1,7 +1,7 @@
 const { app } = require('@azure/functions');
 const { Resend } = require('resend');
 
-app.http('sendEmail', {
+app.http('send-email', {
     methods: ['POST'],
     authLevel: 'anonymous',
     handler: async (request, context) => {
