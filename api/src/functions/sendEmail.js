@@ -29,12 +29,13 @@ app.http('send-email', {
 
             const resend = new Resend(apiKey);
             
-            // Envío del mail
-            // NOTA: 'onboarding@resend.dev' es el remitente de prueba gratuito de Resend.
-            // Para usar tu propio dominio verificado (ej. ventas@myceliot.com) debes cambiarlo aquí abajo.
+            // Leemos el remitente y destinatario de variables de entorno para mayor flexibilidad
+            const fromEmail = process.env.CONTACT_FROM_EMAIL || 'MycelIoT Web <onboarding@resend.dev>';
+            const toEmail = process.env.CONTACT_DESTINATION_EMAIL || 'myceliotcontact@gmail.com';
+
             const result = await resend.emails.send({
-                from: 'MycelIoT Web <onboarding@resend.dev>',
-                to: ['ventas@myceliot.com'],
+                from: fromEmail,
+                to: [toEmail],
                 subject: `Nuevo contacto web: ${name} (${company || 'Particular'})`,
                 html: `
                     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 5px;">
