@@ -1,8 +1,18 @@
+import { useState } from 'react';
 import { Activity, Linkedin, Twitter, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import LegalModal from './LegalModal';
 
 export default function Footer() {
     const { t } = useTranslation();
+    const [isLegalOpen, setIsLegalOpen] = useState(false);
+    const [legalTab, setLegalTab] = useState<'terms' | 'privacy'>('terms');
+
+    const openLegal = (tab: 'terms' | 'privacy') => {
+        setLegalTab(tab);
+        setIsLegalOpen(true);
+    };
+
     return (
         <footer className="bg-background pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
             {/* Background glow */}
@@ -38,18 +48,32 @@ export default function Footer() {
                     <div>
                         <h4 className="text-textMain font-bold mb-4">{t('footer.company')}</h4>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.about')}</a></li>
-                            <li><a href="#" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.technology')}</a></li>
-                            <li><a href="#" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.successCases')}</a></li>
-                            <li><a href="#" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.contact')}</a></li>
+                            <li><a href="#nosotros" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.about')}</a></li>
+                            <li><a href="#tecnologia" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.technology')}</a></li>
+                            <li><a href="#soluciones" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.successCases')}</a></li>
+                            <li><a href="#contacto" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.contact')}</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-textMain font-bold mb-4">{t('footer.legal')}</h4>
                         <ul className="space-y-3 mb-6">
-                            <li><a href="#" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.terms')}</a></li>
-                            <li><a href="#" className="text-textMuted hover:text-primary transition-colors text-sm">{t('footer.privacy')}</a></li>
+                            <li>
+                                <button
+                                    onClick={() => openLegal('terms')}
+                                    className="text-textMuted hover:text-primary transition-colors text-sm text-left"
+                                >
+                                    {t('footer.terms')}
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => openLegal('privacy')}
+                                    className="text-textMuted hover:text-primary transition-colors text-sm text-left"
+                                >
+                                    {t('footer.privacy')}
+                                </button>
+                            </li>
                         </ul>
                         <div className="flex gap-4">
                             <a href="#" className="text-textMuted hover:text-primary transition-colors">
@@ -66,6 +90,13 @@ export default function Footer() {
                     <p>&copy; {new Date().getFullYear()} MycelIoT. {t('footer.rights')}</p>
                 </div>
             </div>
+
+            {/* Legal Modal */}
+            <LegalModal
+                isOpen={isLegalOpen}
+                onClose={() => setIsLegalOpen(false)}
+                initialTab={legalTab}
+            />
         </footer>
     );
 }
